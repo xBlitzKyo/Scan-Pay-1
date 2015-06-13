@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lee.scanpay" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup_page"
+            android:label="@string/title_activity_signup_page" >
+        </activity>
+        <activity
+            android:name=".electricity_page"
+            android:label="@string/title_activity_electricity_page" >
+        </activity>
+        <activity
+            android:name=".menu_page"
+            android:label="@string/title_activity_menu_page" >
+        </activity>
+        <activity
+            android:name=".water_page"
+            android:label="@string/title_activity_water_page" >
+        </activity>
+        <activity
+            android:name=".verification_page"
+            android:label="@string/title_activity_verification_page" >
+        </activity>
+        <activity
+            android:name=".electric_payment"
+            android:label="@string/title_activity_electric_payment" >
+        </activity>
+        <activity
+            android:name=".water_payment"
+            android:label="@string/title_activity_water_payment" >
+        </activity>
+        <activity
+            android:name=".bank_page"
+            android:label="@string/title_activity_bank_page" >
+        </activity>
+        <activity
+            android:name=".success_page"
+            android:label="@string/title_activity_success_page" >
+        </activity>
+    </application>
+
+</manifest>

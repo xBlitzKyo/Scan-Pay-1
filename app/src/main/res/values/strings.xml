@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Scan &amp; Pay</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup_page">signup_page</string>
+    <string name="title_activity_electricity_page">electricity_page</string>
+    <string name="title_activity_menu_page">menu_page</string>
+    <string name="title_activity_water_page">water_page</string>
+    <string name="title_activity_verification_page">verification_page</string>
+    <string name="scan">Scan</string>
+    <string name="title_activity_electric_payment">electric_payment</string>
+    <string name="title_activity_water_payment">water_payment</string>
+    <string name="title_activity_bank_page">bank_page</string>
+
+
+
+    <string-array name="bankArray">
+        <item>MayBank</item>
+        <item>Hong Leong Bank</item>
+        <item>CIMB Bank</item>
+        <item>Public Bank</item>
+        <item>RHB Bank</item>
+    </string-array>
+    <string name="title_activity_success_page">success_page</string>
+</resources>
