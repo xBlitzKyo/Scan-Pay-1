@@ -30,6 +30,7 @@ public class electric_payment extends ActionBarActivity {
         Intent intent = getIntent();
         scanContent = intent.getStringExtra("scanContent");
 
+        getSupportActionBar().hide();
         contentTxt = (TextView) findViewById(R.id.scan_content);
 
         String bill_no;

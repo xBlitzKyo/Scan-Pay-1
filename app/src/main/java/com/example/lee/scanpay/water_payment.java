@@ -19,6 +19,7 @@ public class water_payment extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_water_payment);
         button = (Button) findViewById(R.id.pay_button_1);
 

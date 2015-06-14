@@ -1,122 +1,165 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:paddingLeft="-16dp"
+    android:paddingRight="-16dp"
+    android:paddingTop="-16dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.lee.scanpay.electric_payment"
-    android:id="@+id/electric_pay">
+    android:id="@+id/electric_pay"
+    android:clickable="false"
+    android:background="#FFDCA9">
 
 
     <TextView
         android:id="@+id/bill_no"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:textIsSelectable="true"
         android:textSize="20dp"
-        android:gravity="right"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/name"
-        android:layout_alignEnd="@+id/name"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignStart="@+id/name" />
+        android:gravity="center_vertical|right"
+        android:layout_alignParentTop="false"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/textView47"
+        android:layout_toRightOf="@+id/textView35"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:textIsSelectable="true"
         android:textSize="20dp"
-        android:gravity="right"
+        android:gravity="center_vertical|right"
         android:layout_alignTop="@+id/textView36"
-        android:layout_toRightOf="@+id/textView36"
-        android:layout_toEndOf="@+id/textView36"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="false"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@+id/textView36" />
 
     <TextView
         android:id="@+id/due_date"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:textIsSelectable="true"
         android:textSize="20dp"
-        android:gravity="right"
+        android:gravity="center_vertical|right"
         android:layout_below="@+id/name"
-        android:layout_toRightOf="@+id/textView36"
-        android:layout_toEndOf="@+id/textView36"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="false"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@+id/textView37" />
 
     <TextView
         android:id="@+id/outstanding"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:textIsSelectable="true"
         android:textSize="20dp"
-        android:gravity="right"
+        android:gravity="center_vertical|right"
         android:layout_below="@+id/due_date"
-        android:layout_toRightOf="@+id/textView37"
-        android:layout_toEndOf="@+id/textView37"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="false"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_toRightOf="@+id/textView37" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pay"
         android:id="@+id/pay_button"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="goBank"/>
+        android:onClick="goBank"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:text="Bill No:"
         android:id="@+id/textView35"
         android:textSize="20dp"
-        android:gravity="left"
         android:layout_alignTop="@+id/bill_no"
-        android:layout_toLeftOf="@+id/pay_button"
-        android:layout_toStartOf="@+id/pay_button"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="false"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+        android:gravity="left|center_vertical"
+        android:paddingLeft="32dp" />
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:text="Name:"
         android:id="@+id/textView36"
         android:textSize="20dp"
-        android:gravity="left"
+        android:gravity="left|center_vertical"
         android:layout_below="@+id/textView35"
-        android:layout_toLeftOf="@+id/pay_button"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="false"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="32dp" />
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:text="Due Date:"
         android:id="@+id/textView37"
         android:textSize="20dp"
-        android:gravity="left"
+        android:gravity="left|center_vertical"
         android:layout_below="@+id/textView36"
-        android:layout_toLeftOf="@+id/pay_button"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="false"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="32dp" />
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:text="Outstanding:"
         android:id="@+id/textView38"
         android:textSize="20dp"
-        android:gravity="left"
+        android:gravity="left|center_vertical"
         android:layout_below="@+id/textView37"
-        android:layout_toLeftOf="@+id/pay_button"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="false"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Bill"
+        android:id="@+id/textView47"
+        android:layout_alignWithParentIfMissing="false"
+        android:autoText="false"
+        android:background="#FD5621"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bill_no"
+        android:layout_alignEnd="@+id/bill_no"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

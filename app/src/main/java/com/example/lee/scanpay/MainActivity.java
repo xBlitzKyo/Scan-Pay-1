@@ -11,15 +11,17 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-    Button button;
-    Button button1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.signup_button);
-        button = (Button) findViewById(R.id.login_button);
+        getSupportActionBar().hide();
+
+        final Button button = (Button) findViewById(R.id.signup_button);
+        final Button button1 = (Button) findViewById(R.id.login_button);
     }
 
     public void goSignUp(View view){

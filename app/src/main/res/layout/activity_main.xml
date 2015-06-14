@@ -3,59 +3,85 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#FFDCA9"
+    android:id="@+id/main">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:inputType="textPersonName"
         android:hint="Username"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_alignParentTop="true"
+        android:gravity="fill_vertical|center_horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
-        android:gravity="center_horizontal" />
+        android:layout_below="@+id/imageView"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF8EE" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:inputType="numberPassword"
         android:ems="10"
         android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
         android:hint="Password"
-        android:gravity="center_horizontal" />
+        android:gravity="fill_vertical|center_horizontal"
+        android:autoText="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF8EE" />
 
     <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
         android:text="Remember me"
         android:id="@+id/checkBox"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:checked="false" />
+        android:checked="false"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="10dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:text="Sign up"
         android:id="@+id/signup_button"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/checkBox"
         android:layout_alignLeft="@+id/checkBox"
         android:layout_alignStart="@+id/checkBox"
-        android:onClick="goSignUp"/>
+        android:onClick="goSignUp"
+        android:background="#FFF8EE"
+        android:singleLine="false"
+        android:nestedScrollingEnabled="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:text="Login"
         android:id="@+id/login_button"
+        android:onClick="goLogin"
+        android:background="#FFF8EE"
+        android:singleLine="false"
+        android:nestedScrollingEnabled="true"
         android:layout_alignTop="@+id/signup_button"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
-        android:onClick="goLogin"/>
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_alignEnd="@+id/checkBox" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:layout_marginBottom="50dp"
+        android:baselineAlignBottom="false"
+        android:clickable="true" />
+
 </RelativeLayout>

@@ -26,7 +26,7 @@ public class electricity_page extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_electricity_page);
         scanBtn = (Button) findViewById(R.id.scan_button);
-        formatTxt = (TextView) findViewById(R.id.scan_format);
+        getSupportActionBar().hide();
         contentTxt = (TextView) findViewById(R.id.scan_content);
 
         scanBtn.setOnClickListener(new View.OnClickListener() {
@@ -46,12 +46,12 @@ public class electricity_page extends ActionBarActivity {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if(scanningResult != null) {
             String scanContent = scanningResult.getContents();
-            String scanFormat = scanningResult.getFormatName();
+            //String scanFormat = scanningResult.getFormatName();
 
             Intent intent2 = new Intent(this, electric_payment.class);
 
             intent2.putExtra("scanContent", scanContent);
-            intent2.putExtra("scanFormat", scanFormat);
+            //intent2.putExtra("scanFormat", scanFormat);
             startActivity(intent2);
 
             //formatTxt.setText("Format: " + scanFormat);

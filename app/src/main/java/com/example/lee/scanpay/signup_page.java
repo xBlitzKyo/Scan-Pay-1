@@ -18,6 +18,7 @@ public class signup_page extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
         button = (Button) findViewById(R.id.register_button);
+        getSupportActionBar().hide();
     }
 
     public void goVerification(View view){

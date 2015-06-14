@@ -16,6 +16,7 @@ public class success_page extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_success_page);
         button = (Button) findViewById(R.id.return_button);
     }

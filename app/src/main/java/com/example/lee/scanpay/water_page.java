@@ -22,15 +22,15 @@ public class water_page extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_water_page);
-        scanBtn = (Button) findViewById(R.id.scan_button);
-        formatTxt = (TextView) findViewById(R.id.scan_format);
+        scanBtn = (Button) findViewById(R.id.scan_button2);
         contentTxt = (TextView) findViewById(R.id.scan_content);
 
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v.getId() == R.id.scan_button) {
+                if (v.getId() == R.id.scan_button2) {
                     IntentIntegrator scanIntegrator = new IntentIntegrator(water_page.this);
                     scanIntegrator.initiateScan();
                 }
@@ -42,12 +42,12 @@ public class water_page extends ActionBarActivity {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if(scanningResult != null) {
             String scanContent = scanningResult.getContents();
-            String scanFormat = scanningResult.getFormatName();
+            //String scanFormat = scanningResult.getFormatName();
 
             Intent intent2 = new Intent(this, water_payment.class);
 
             intent2.putExtra("scanContent", scanContent);
-            intent2.putExtra("scanFormat", scanFormat);
+            //intent2.putExtra("scanFormat", scanFormat);
             startActivity(intent2);
         }
         else{

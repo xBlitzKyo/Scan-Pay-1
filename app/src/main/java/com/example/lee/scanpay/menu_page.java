@@ -18,9 +18,10 @@ public class menu_page extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_menu_page);
         button = (ImageButton) findViewById(R.id.lightning_button);
-        button = (ImageButton) findViewById(R.id.water_button);
+        button2 = (ImageButton) findViewById(R.id.water_button);
     }
 
     public void goElectric(View view){

@@ -20,7 +20,7 @@ public class bank_page extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_page);
         button = (Button) findViewById(R.id.continue_button);
-
+        getSupportActionBar().hide();
 
         Spinner spinnerBank = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter <CharSequence> adapterBank = ArrayAdapter.createFromResource(this, R.array.bankArray, android.R.layout.simple_spinner_item);
